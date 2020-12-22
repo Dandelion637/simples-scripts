@@ -31,9 +31,20 @@ init_vim() {
     echo :set number >> .vimrc
 }
 
+# bash
+init_bash() {
+    if [ -f .bashrc ]; then
+        wget -q https://gitee.com/chfeng-cs/simple-scripts/raw/master/.bashrc
+    fi
+    if [ -f .profile ]; then
+        wget -q https://gitee.com/chfeng-cs/simple-scripts/raw/master/.profile
+    fi
+}
+
 main() {
     init_ssh
-    init_ssh
+    init_vim
+    init_bash
 }
 
 main
