@@ -32,8 +32,9 @@ init_vim() {
 
 # bash
 init_bash() {
-    wget -q https://gitee.com/chfeng-cs/simple-scripts/raw/master/.bashrc
-    wget -q https://gitee.com/chfeng-cs/simple-scripts/raw/master/.profile
+    cd ~
+    wget -q https://gitee.com/chfeng-cs/simple-scripts/raw/master/.bashrc -O .bashrc
+    wget -q https://gitee.com/chfeng-cs/simple-scripts/raw/master/.profile -O .profile
     # if [ ! -f .bashrc ]; then
     #     wget -q https://gitee.com/chfeng-cs/simple-scripts/raw/master/.bashrc
     # fi
